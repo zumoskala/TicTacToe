@@ -1,0 +1,89 @@
+/* COLOR PALETTE:
+#FFF1D0
+#BB8A89
+#7494a0
+#6D8A96
+#5D707F
+#2D3142
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    background-color: #6d8a96;
+    padding: 50px 50px 25px 50px;
+    margin: 50px;
+    border: #7494a0 solid 2px;
+    border-radius: 20px;
+    color: #2D3142;
+}
+
+.title {
+    text-align: center;
+}
+
+.board h1 {
+    margin-bottom: 25px;
+}
+
+.board span {
+    color: #FFF1D0;
+}
+
+.game_area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    background-color: #5D707F;
+}
+
+.game_cell {
+    width: 130px;
+    height: 130px;
+    background-color: #6d8a96;
+    cursor: pointer;
+}
+
+.settings_row {
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.settings_row .current_player {
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+}
+
+.settings_row .start_new_game {
+    float: right;
+}
+.settings_row button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5D707F;
+    border: #2D3142 solid 2px;
+    border-radius: 5px;
+    width: 150px;
+    text-transform: uppercase;
+    color: #FFF1D0;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+.settings_row button:hover {
+    background-color: #BB8A89;
+    border: #a97b7b solid 2px;
+}
