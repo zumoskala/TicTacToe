@@ -53,6 +53,17 @@ body {
     height: 130px;
     background-color: #6d8a96;
     cursor: pointer;
+    text-align: center;
+}
+
+.o::before {
+    content: 'o';
+    font-size: 100px;
+}
+
+.x::before {
+    content: 'x';
+    font-size: 100px;
 }
 
 .settings_row {
@@ -81,9 +92,15 @@ body {
     color: #FFF1D0;
     font-weight: bold;
     transition-duration: 0.5s;
+    outline: none;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);
 }
 
 .settings_row button:hover {
     background-color: #BB8A89;
     border: #a97b7b solid 2px;
+}
+
+.settings_row button:active {
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.4);
 }
